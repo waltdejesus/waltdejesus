@@ -25,7 +25,7 @@
     { id: 3, nome: 'Empresa C', localizacao: 'Local C' }
   ]);
   
-  const empresaSelecionada = ref(empresas.value[0]); // Definindo a primeira empresa como selecionada por padrão
+  const empresaSelecionada = ref(empresas.value[0]);
   
   const exibirDetalhes = (empresa) => {
     empresaSelecionada.value = empresa;

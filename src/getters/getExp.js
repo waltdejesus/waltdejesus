@@ -1,4 +1,4 @@
-import { ref} from 'vue';
+import { ref } from 'vue';
 import { collection, getDocs, deleteDoc, doc } from 'firebase/firestore'
 import { db } from '../firebase/firebase'
 

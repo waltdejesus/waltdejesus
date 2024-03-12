@@ -8,13 +8,13 @@ import { getFirestore } from "firebase/firestore";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC8DuZcwGmmwjcFsUOoRZEkUB3E9bf9f8E",
-  authDomain: "waltdejesus-backend.firebaseapp.com",
-  projectId: "waltdejesus-backend",
-  storageBucket: "waltdejesus-backend.appspot.com",
-  messagingSenderId: "819525159829",
-  appId: "1:819525159829:web:d535d303620a1d5967449c",
-  measurementId: "G-Q9HGLHFB8K"
+  apiKey: "AIzaSyD2ZkvhQ-mUKyBHM0Z-PsEGlp3ilmXZnk0",
+  authDomain: "waltdejesus-f592e.firebaseapp.com",
+  projectId: "waltdejesus-f592e",
+  storageBucket: "waltdejesus-f592e.appspot.com",
+  messagingSenderId: "525327159998",
+  appId: "1:525327159998:web:e6150cf117e962a8be04ef",
+  measurementId: "G-E0DKLX4DHD"
 };
 
 // Initialize Firebase

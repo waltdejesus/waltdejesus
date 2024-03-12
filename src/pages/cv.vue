@@ -6,9 +6,9 @@
         <div class="work_xp">
             <div class="wEx">
                 <h2>My Work Experience</h2>
-                <div class="companys" v-for="(experience, key) in storeExperience" :key="key">
+                <div class="companys" v-for="(experience, key) in storeExperience" :key="key" @click="seeCompany(experience)">
                     <div class="c" >
-                        <span @click="seeCompany(experience)">{{ experience.company }}</span>
+                        <span >{{ experience.company }}</span>
                     </div>
                 </div>
             </div>
@@ -23,7 +23,7 @@
                         <img src="../assets/exepIcons/job.svg" alt="">
                         <span>My Load</span>
                     </div>
-                    <h1>{{ selectedCompany.company }}</h1>
+                    <h1>{{ selectedCompany.cargo }}</h1>
                     <div class="details">
                         <img src="../assets/exepIcons/local.svg" alt="">
                         <span>{{ selectedCompany.mode }} - {{ selectedCompany.country }} -  {{selectedCompany.duration}}</span>
@@ -71,6 +71,7 @@
             </div>
         </div>
 
+
     </div>
 
    <!-- <div class="services_container">
@@ -93,12 +94,15 @@
     import foo from '../components/bottom/footer.vue'
     import storeExperience from "../getters/getExp";
 
-    const selectedCompany = ref(storeExperience.value[0])
+
+    const selectedCompany = ref(storeExperience.value)
+
     const seeCompany = (index) =>{
-        console.log(`Voce selecionou a empresa ${selectedCompany.value = index}`)
+        selectedCompany.value = index
+        // console.log(`Voce selecionou a empresa ${selectedCompany.value = index}`)
     }
 
-    console.log(storeExperience)
+    console.log(storeExperience.value)
 
 </script>
 
