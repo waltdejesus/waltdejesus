@@ -6,16 +6,19 @@
 
         <div class="text_info">
             <div class="main">
-                <h1>I'm <br> Walt De Jesus</h1>
+                <h1 style="font-size: 20px; color: #A8A8A8;">Eu sou o  Walt De Jesus</h1>
                 
                 <h2 style="font-size: 60px; font-weight: 800; filter: drop-shadow(0px 0px 30px #ffffff63);  background: -webkit-linear-gradient(#ffffff, #BCBCBC);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;">
-                UX & Product Designer
+                UX/UI & Product Designer
                 </h2>
                 
-                <p style="font-size: 20px;">
-                My Job short job description
+                <p style="font-size: 12px; color: #A8A8A8;">
+                  Com mais de  <strong style="color: white"> 5 Anos de Experiência na área </strong>. Sou apaixonado por criar
+experiências excepcionais que impulsionam resultados de negócios.
+Especializado em liderar equipes dinâmicas de design, colaboro estreitamente com equipes multidisciplinares e
+partes interessadas para potencializar as experiências dos usuários
                 </p>
             </div>
             <div class="cta">
@@ -48,23 +51,23 @@
 <style scoped>
 
     .about{
-        max-width: 1261px;
+        max-width: 1371px;
         width: 100%; /* Inicialmente, ocupa toda a largura disponível */
         display: flex; 
-        flex-wrap: wrap; /* Permitir que os elementos quebrem para a próxima linha em telas menores */
+        /* flex-wrap: wrap; */
         justify-content: space-between;
         padding: 40px 50px;
         align-items: center;
-        border-radius: 50px;
+        border-radius: 60px;
         word-break: break-all;
         background: linear-gradient( to bottom, hsla(0, 0%, 100%, 0.1), #ffffff00);
         backdrop-filter: blur( 7px );
         -webkit-backdrop-filter: blur( 7px );
         font-size: 13px;
         border: 2px solid rgba(255, 255, 255, 0.1);
-        
         position: relative; /* Adicionamos position: relative para que o elemento pseudo tenha como referência */
-    }
+box-shadow: 0px 0px 60px 0px rgba(255, 255, 255, 0.115);
+      }
 
     button{
         background: linear-gradient( to bottom, hsla(0, 0%, 100%, 0.1), #ffffff00);
@@ -75,8 +78,8 @@
 
     .video_info{
         max-width: 100%; /* Garantir que a largura máxima seja 100% */
-        width: 340px; /* Largura inicial do vídeo */
-        height: 450px; /* Altura inicial do vídeo */
+        width: 450px; /* Largura inicial do vídeo */
+        height: 550px; /* Altura inicial do vídeo */
         border-radius: 40px;
         background: linear-gradient( to bottom, hsla(0, 0%, 100%, 0.1), #ffffff00);
         backdrop-filter: blur( 7px );
@@ -101,8 +104,9 @@
     }
 
     .text_info{
-        width: 63%; /* Ajuste conforme necessário */
-        max-width: 715px; /* Use max-width para evitar que o texto fique muito longo em telas maiores */
+        max-width: 100%; /* Use max-width para evitar que o texto fique muito longo em telas maiores */
+        width: 780px; /* Ajuste conforme necessário */
+
         word-break: break-all;
         display: flex;
         flex-direction: column;
@@ -128,6 +132,9 @@ i {
   animation: move 4s infinite 1s;
 }
 
+
+
+
 @keyframes move {
   0% {
     left: 0;
@@ -147,16 +154,49 @@ i {
   }
 }
 
-    @media (max-width: 1182px) {
+    @media (max-width: 1024px) {
         .about {
-            flex-direction: column; /* Alterar para layout de coluna em telas menores */
-            align-items: stretch; /* Esticar os itens para ocupar a largura total */
+            flex-direction: column;
+            align-items: stretch; 
         }
         .video_info, .text_info {
-            width: 100%; /* Ajustar para ocupar a largura total em telas menores */
-            max-width: 100%; /* Remover a restrição de largura máxima */
+            width: 100%; 
+            max-width: 100%; 
         }
+
+        h2{font-size: 20px;}
+
+        .video_info{height: 200px;}
+    } 
+
+
+    @media (max-width: 1667px) {
+       .about{
+        max-width: 85%;
+        display: flex;
+        gap: 30px;
+        
+
+       }
+
+       .main h2{
+        line-height: 60px;
+        margin-bottom: 20px;
+       }
+
+       .video_info{
+        max-width: 100%;
+        height: 400px;
+       }
+
+
     }
+
+ 
+
+
+
+    
 
 
 </style>

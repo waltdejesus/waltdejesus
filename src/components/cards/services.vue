@@ -55,7 +55,7 @@
     .service_card{
         max-width: 335px;
         width: 100%; /* Inicialmente, ocupa toda a largura disponível */
-        background: #1B1D22;
+        background: #1A1A1B;
         padding: 20px;
         border-radius: 20px;
         display: flex;

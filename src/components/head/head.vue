@@ -41,7 +41,7 @@
 
     ul{
         display: flex; gap: 20px;
-        padding: 25px 40px;
+        padding: 15px 20px;
         align-items: center;
         border-radius: 50px;
         background: rgba(255, 255, 255, 0.05);

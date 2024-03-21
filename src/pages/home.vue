@@ -2,16 +2,16 @@
     <headVue/>
 
     <div class="banner">
-        <img src="../assets/grid.svg" alt="">
+        <img src="../assets/grid.png" alt="">
     </div>
     <div class="wj_mains">
         <aboutVue @navegate="goTo" class="about"/>
-
+        <tape class="tape"/>
         <div class="skiils_container">
             <div class="resume">
-                <span style="font-size: 60px; font-weight: 800; filter: drop-shadow(0px 0px 30px #ffffff63);  background: -webkit-linear-gradient(#ffffff, #a3a3a3);
+                <span style="font-size: 50px; font-weight: 800; filter: drop-shadow(0px 0px 30px #ffffff63);  background: -webkit-linear-gradient(#ffffff, #a3a3a3);
                 -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent; line-height: 46px;">
+                -webkit-text-fill-color: transparent; line-height: 50px;">
                     Minhas habilidades abrangem desde: <br>  estratégia, pesquisa, análise,  design <br> de interação e prototipagem e Testes 
                 </span>
                 <i></i>
@@ -47,9 +47,9 @@
     import skillVue from '../components/cards/skill.vue';
     import service from '../components/cards/services.vue'
     import foo from '../components/bottom/footer.vue'
-    import teste from '../components/about/teste.vue'
     import { ref } from 'vue';
     import headVue from '../components/head/head.vue';
+    import tape from '../components/cards/tape.vue';
 
 
     const targetSection = ref()
@@ -95,8 +95,15 @@
         width: 100%;
     }
 
+    .tape{
+        width: 100000px;
+        position: absolute;
+        margin-bottom: 280px;
+        transform: rotate(2deg);
+    }
+
     .about{
-        margin-top: 100px;
+        margin-top: -30px;
         margin-bottom: 100px;
     }
     .skiils_container{
@@ -104,7 +111,7 @@
         display: flex;
         justify-content: center;
         gap: 40px;
-        margin-top: 130px;
+        margin-top: 60px;
         margin-bottom: 160px;
     }
 
@@ -131,4 +138,9 @@
         gap: 40px;
     }
     .services_container .title{display: flex; gap: 20px;}
+    .resume{
+        margin-top: 200px;
+    }
+
+   
 </style>
