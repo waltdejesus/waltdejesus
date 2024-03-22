@@ -7,6 +7,7 @@
     <div class="wj_mains">
         <aboutVue @navegate="goTo" class="about"/>
         <tape class="tape"/>
+        <tape02 class="tape02"/>
         <div class="skiils_container">
             <div class="resume">
                 <span style="font-size: 50px; font-weight: 800; filter: drop-shadow(0px 0px 30px #ffffff63);  background: -webkit-linear-gradient(#ffffff, #a3a3a3);
@@ -17,13 +18,7 @@
                 <i></i>
             </div>
 
-            <!-- <div class="other">
-                <h2>E não menos importante</h2>
-                <h3>
-                    Ajudo você a idenficar problemas de <br> Experiência e resolve-los com <br> habilidades
-                </h3>
-
-            </div> -->
+  
 
         </div>
         <skillVue />
@@ -50,6 +45,7 @@
     import { ref } from 'vue';
     import headVue from '../components/head/head.vue';
     import tape from '../components/cards/tape.vue';
+    import tape02 from '../components/cards/tape02.vue';
 
 
     const targetSection = ref()
@@ -95,12 +91,7 @@
         width: 100%;
     }
 
-    .tape{
-        width: 100000px;
-        position: absolute;
-        margin-bottom: 280px;
-        transform: rotate(2deg);
-    }
+
 
     .about{
         margin-top: -30px;
@@ -139,7 +130,21 @@
     }
     .services_container .title{display: flex; gap: 20px;}
     .resume{
-        margin-top: 200px;
+        margin-top: 300px;
+    }
+ 
+    .tape{
+        width: 100000px;
+        position: absolute;
+        margin-bottom: 480px;
+        transform: rotate(3deg);
+    }
+
+    .tape02{
+        width: 100000px;
+        position: absolute;
+        margin-bottom: 490px;
+        transform: rotate(-5deg);
     }
 
    

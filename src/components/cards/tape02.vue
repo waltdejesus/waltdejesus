@@ -1,18 +1,15 @@
 <template>
-  <div class="logos">
-    <div class="logos-slide">
+    <div class="wj">
+        <div class="tape_main">
+            <div class="logos">
+                <div class="logos-slide">
 
-      <!-- <h1 v-for="i in 10" :key="i" style="color: black;">Teste</h1> -->
-      <img src="../assets/logos/3m.svg" />
-      <img src="../assets/logos/barstool-store.svg" />
-      <img src="../assets/logos/budweiser.svg" />
-      <img src="../assets/logos/buzzfeed.svg" />
-      <img src="../assets/logos/forbes.svg" />
-      <img src="../assets/logos/macys.svg" />
-      <img src="../assets/logos/menshealth.svg" />
-      <img src="../assets/logos/mrbeast.svg" />
+                <h1 v-for="i in 10" :key="i" style="color: white;">Vamos trablhar Juntos</h1>
+               
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 </template>
 
 <script setup>
@@ -25,19 +22,24 @@ onMounted(() => {
   document.querySelector('.logos').appendChild(copy.value);
 });
 </script>
-
 <style scoped>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-body {
-  background: #f2f2f2;
-}
+    .wj{max-width: 100%; width: 100%;}
+    .tape_main{
+        width: 10000px;
+        display: flex;
+        background: rgb(16, 19, 195);
+        color: black;
+        overflow: hidden;
+        font-size: 13px;
+        position: relative;
+        margin-left: -30px;
+        gap: 30px;
+    }
 
-@keyframes slide {
+   
+
+    @keyframes slide {
   from {
     transform: translateX(0);
   }
@@ -46,12 +48,17 @@ body {
   }
 }
 
+
 .logos {
   overflow: hidden;
-  padding: 60px 0;
-  background: white;
+  padding: 30px 0;
+  background: rgb(16, 19, 195);
   white-space: nowrap;
   position: relative;
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  color: white;
 }
 
 .logos:before,
@@ -66,7 +73,7 @@ body {
 
 .logos:before {
   left: 0;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(32, 16, 146));
 }
 
 .logos:after {
@@ -82,11 +89,11 @@ body {
   display: inline-block;
   animation: 35s slide infinite linear;
   display: flex;
-  gap: 40px;
+  gap: 70px;
 }
 
 .logos-slide img {
-  height: 50px;
-  margin: 0 40px;
+  height: 30px;
 }
+
 </style>
