@@ -136,14 +136,14 @@
     .tape{
         width: 100000px;
         position: absolute;
-        margin-bottom: 480px;
+        margin-bottom: 280px;
         transform: rotate(3deg);
     }
 
     .tape02{
         width: 100000px;
         position: absolute;
-        margin-bottom: 490px;
+        margin-bottom: 190px;
         transform: rotate(-5deg);
     }
 
